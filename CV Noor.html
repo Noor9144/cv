@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Noor AbdulRahman Al-Omrani</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #e0e0e0;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, color 0.3s;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+            color: #2c3e50;
+            font-weight: 700;
+        }
+        header p {
+            margin: 5px 0;
+            font-size: 18px;
+            color: #34495e;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 28px;
+            color: #2980b9;
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 5px;
+            font-weight: 500;
+        }
+        h3 {
+            font-size: 22px;
+            color: #2980b9;
+            font-weight: 500;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .dark-mode {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+        }
+        .dark-mode .container {
+            background-color: #34495e;
+            color: #ecf0f1;
+        }
+        .toggle-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #2980b9;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .toggle-button:hover {
+            background-color: #1a5f87;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Noor AbdulRahman Al-Omrani</h1>
+            <p>Phone: +966 53 283 3134</p>
+            <p>Email: noor.alamrani20@email.com</p>
+        </header>
+
+        <section>
+            <h2>Summary</h2>
+            <p>Detail-oriented and highly motivated IT professional with experience in data analysis, software development, and content management. Proficient in multiple programming languages and technologies with strong problem-solving skills.</p>
+        </section>
+
+        <section>
+            <h2>Work Experience</h2>
+            <h3>Software Developer</h3>
+            <p>Company Name - City, Country</p>
+            <p>Month Year - Present</p>
+            <ul>
+                <li>Utilized data analysis tools such as Excel and SPSS to interpret and manage data effectively.</li>
+                <li>Designed and developed multiple software applications using Java, Python, and Android.</li>
+                <li>Managed content using WordPress and Drupal.</li>
+                <li>Earned professional certificates including CCNA and MCSA Linux.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <h3>Bachelor's Degree in Information Technology</h3>
+            <p>University of Tabuk - Tabuk, Saudi Arabia</p>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>Databases: SQL, NoSQL</li>
+                <li>Operating Systems: Windows, Linux, macOS</li>
+                <li>Programming Languages: Java, Python, JavaScript, PHP, C++, HTML, CSS</li>
+                <li>Data Analysis Tools: Excel, SPSS</li>
+                <li>Content Management Systems: WordPress, Drupal</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Languages</h2>
+            <ul>
+                <li>Arabic (Native)</li>
+                <li>English (Fluent)</li>
+                <li>Japanese (Intermediate)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Achievements</h2>
+            <ul>
+                <li>Earned a certification in computer driving.</li>
+                <li>Earned a certification in computer programming.</li>
+                <li>Earned a certification in ethical hacking.</li>
+            </ul>
+        </section>
+    </div>
+    <button class="toggle-button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
